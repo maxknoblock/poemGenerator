@@ -121,7 +121,7 @@ class WebhookApp {
     displayResults(data) {
         this.hideLoading();
         
-        let html = '<h3>Webhook Response:</h3>';
+        let html = '';
         
         if (typeof data === 'object') {
             html += '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
